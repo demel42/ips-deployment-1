@@ -1,0 +1,16 @@
+{
+    "version": "0.9",
+    "tstamp": 1704207210,
+    "files": [
+        {
+            "ident": "shelly_plus2pm.php",
+            "name": "Shelly Plus2PM",
+            "location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
+        },
+        {
+            "ident": "shelly_pro3em.php",
+            "name": "Shelly Pro3EM",
+            "location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
+        }
+    ]
+}
