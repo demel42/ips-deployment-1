@@ -1,6 +1,6 @@
 {
     "version": "0.9",
-    "tstamp": 1704269455,
+    "tstamp": 1704387177,
     "files": [
         {
             "ident": "shelly_plus2pm.php",
@@ -11,6 +11,16 @@
             "ident": "shelly_pro3em.php",
             "name": "Shelly Pro3EM",
             "location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
+        }
+        {
+            "ident": "x1.php",
+            "name": "X 1",
+            "location": "Test\\ScriptDeployment"
+        }
+        {
+            "ident": "x2.php",
+            "name": "X 2",
+            "location": "Test\\ScriptDeployment"
         }
     ]
 }
