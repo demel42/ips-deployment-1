@@ -22,5 +22,10 @@
             "name": "X 2",
             "location": "Test\\ScriptDeployment"
         }
+        {
+            "ident": "x3.php",
+            "name": "X 3",
+            "location": "Test\\ScriptDeployment"
+        }
     ]
 }
