@@ -27,7 +27,7 @@ $setting = [
         'doArchive' => true,
     ],
     'TotalEnergy0' => [
-        'name'            => 'Gesamter Verbrauch 1',
+        'name'            => 'Gesamtverbrauch 1',
         'position'        => 15,
         'doArchive'       => true,
         'aggregationType' => 1,
@@ -52,7 +52,7 @@ $setting = [
         'doArchive' => true,
     ],
     'TotalEnergy1' => [
-        'name'            => 'Gesamter Verbrauch 2',
+        'name'            => 'Gesamtverbrauch 2',
         'position'        => 25,
         'doArchive'       => true,
         'aggregationType' => 1,
