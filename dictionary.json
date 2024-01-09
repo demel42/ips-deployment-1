@@ -1,31 +1,71 @@
 {
-    "version": "0.9",
-    "tstamp": 1704387177,
-    "files": [
-        {
-            "ident": "shelly_plus2pm.php",
-            "name": "Shelly Plus2PM",
-            "location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
-        },
-        {
-            "ident": "shelly_pro3em.php",
-            "name": "Shelly Pro3EM",
-            "location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
-        },
-        {
-            "ident": "x1.php",
-            "name": "X 1",
-            "location": "Test\\ScriptDeployment"
-        },
-        {
-            "ident": "x2.php",
-            "name": "X 2",
-            "location": "Test\\ScriptDeployment"
-        },
-        {
-            "ident": "x3.php",
-            "name": "X 3",
-            "location": "Test\\ScriptDeployment"
-        }
-    ]
+	"version": "1.0",
+	"tstamp": 1704811639,
+	"files": [
+		{
+			"ident": "util-instance.php",
+			"name": "Hilfsfunktionen zur Überarbeitung von Instanzen",
+			"location": "Scripte\\System-Scripte"
+		},
+		{
+			"ident": "fibaro-fgcd-001.php",
+			"name": "Fibaro FGCD-001",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
+		},
+		{
+			"ident": "miflora.php",
+			"name": "MiFlora",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
+		},
+		{
+			"ident": "shelly_plus2pm.php",
+			"name": "Shelly Plus2PM",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
+		},
+		{
+			"ident": "shelly_pro3em.php",
+			"name": "Shelly Pro3EM",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
+		},
+		{
+			"ident": "tasmota-aisirer-awp02l.php",
+			"name": "Tasmota AISIRER AWP07L",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
+		},
+		{
+			"ident": "tasmota-bt.php",
+			"name": "TasmotaBT",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
+		},
+		{
+			"ident": "tasmota-gosund-ep2.php",
+			"name": "Tasmota Gosund EP2",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
+		},
+		{
+			"ident": "tasmota-nous-at1.php",
+			"name": "Tasmota NOUS A1T",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
+		},
+		{
+			"ident": "tasmota-shelly25.php",
+			"name": "Tasmota Shelly 2.5",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
+		},
+		{
+			"ident": "x1.php",
+			"name": "X 1",
+			"location": "Test\\ScriptDeployment"
+		},
+		{
+			"ident": "x2.php",
+			"name": "X 2",
+			"location": "Test\\ScriptDeployment"
+		},
+		{
+			"ident": "x3.php",
+			"name": "X 3",
+			"location": "Test\\ScriptDeployment"
+		}
+	]
 }
