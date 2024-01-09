@@ -1,6 +1,6 @@
 {
-	"version": "1.0",
-	"tstamp": 1704811639,
+	"version": "1.1",
+	"tstamp": 1704816757,
 	"files": [
 		{
 			"ident": "util-instance.php",
@@ -11,6 +11,11 @@
 			"ident": "fibaro-fgcd-001.php",
 			"name": "Fibaro FGCD-001",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
+		},
+		{
+			"ident": "HydrawiseZone.php",
+			"name": "HydrawiseZone",
+			"location": "Test\\ScriptDeployment\\murks\\bla"
 		},
 		{
 			"ident": "miflora.php",
@@ -55,11 +60,6 @@
 		{
 			"ident": "x1.php",
 			"name": "X 1",
-			"location": "Test\\ScriptDeployment"
-		},
-		{
-			"ident": "x2.php",
-			"name": "X 2",
 			"location": "Test\\ScriptDeployment"
 		}
 	]
