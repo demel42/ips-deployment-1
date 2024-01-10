@@ -56,6 +56,6 @@
 			"filename": "tasmota-shelly25.php",
 			"name": "Tasmota Shelly 2.5",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
-		},
+		}
 	]
 }
