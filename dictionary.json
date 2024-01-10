@@ -68,7 +68,7 @@
             "name": "Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen"
         },
 		{
-            "filename": "HM-instance-revice.php",
+            "filename": "HM-instance-revise.php",
             "location": "Scripte\\System-Scripte",
             "name": "HomeMatic - Instanzen überarbeiten"
         }
