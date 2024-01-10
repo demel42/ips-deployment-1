@@ -1,66 +1,61 @@
 {
-	"version": "1.1",
-	"tstamp": 1704816757,
+	"version": "1.2",
+	"tstamp": 1704882715,
 	"files": [
 		{
-			"ident": "util-instance.php",
+			"filename": "util-instance.php",
 			"name": "Hilfsfunktionen zur Überarbeitung von Instanzen",
 			"location": "Scripte\\System-Scripte"
 		},
 		{
-			"ident": "fibaro-fgcd-001.php",
+			"filename": "fibaro-fgcd-001.php",
 			"name": "Fibaro FGCD-001",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
-			"ident": "HydrawiseZone.php",
+			"filename": "HydrawiseZone.php",
 			"name": "HydrawiseZone",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
-			"ident": "miflora.php",
+			"filename": "miflora.php",
 			"name": "MiFlora",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
-			"ident": "shelly_plus2pm.php",
+			"filename": "shelly_plus2pm.php",
 			"name": "Shelly Plus2PM",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
-			"ident": "shelly_pro3em.php",
+			"filename": "shelly_pro3em.php",
 			"name": "Shelly Pro3EM",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
-			"ident": "tasmota-aisirer-awp02l.php",
+			"filename": "tasmota-aisirer-awp02l.php",
 			"name": "Tasmota AISIRER AWP07L",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
-			"ident": "tasmota-bt.php",
+			"filename": "tasmota-bt.php",
 			"name": "TasmotaBT",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
-			"ident": "tasmota-gosund-ep2.php",
+			"filename": "tasmota-gosund-ep2.php",
 			"name": "Tasmota Gosund EP2",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
-			"ident": "tasmota-nous-at1.php",
+			"filename": "tasmota-nous-at1.php",
 			"name": "Tasmota NOUS A1T",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
-			"ident": "tasmota-shelly25.php",
+			"filename": "tasmota-shelly25.php",
 			"name": "Tasmota Shelly 2.5",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
-		{
-			"ident": "x1.php",
-			"name": "X 1",
-			"location": "Test\\ScriptDeployment"
-		}
 	]
 }
