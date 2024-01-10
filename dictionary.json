@@ -1,9 +1,9 @@
 {
-	"version": "1.3",
-	"tstamp": 1704904764,
+	"version": "1.4",
+	"tstamp": 1704905834,
 	"files": [
 		{
-			"filename": "instance-revice-helper.php",
+			"filename": "instance-revise-helper.php",
 			"name": "Hilfsfunktionen zur Überarbeitung von Instanzen",
 			"location": "Scripte\\System-Scripte"
 		},
@@ -56,6 +56,21 @@
 			"filename": "tasmota-shelly25.php",
 			"name": "Tasmota Shelly 2.5",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
-		}
+		},
+		{
+            "filename": "instance-revise.php",
+            "location": "Scripte\\System-Scripte",
+            "name": "Instanzen überarbeiten"
+        },
+        {
+            "filename": "HM-instance-revise-helper.php",
+            "location": "Scripte\\System-Scripte",
+            "name": "Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen"
+        },
+		{
+            "filename": "HM-instance-revice.php",
+            "location": "Scripte\\System-Scripte",
+            "name": "HomeMatic - Instanzen überarbeiten"
+        }
 	]
 }
