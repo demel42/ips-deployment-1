@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-require_once IPS_GetScriptFile(MapLocalConstant('HELPER_GLOBAL'));
-
 // HmIP-ESI
 $setting = [
     'name' => 'Energiezähler',
