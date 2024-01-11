@@ -1,6 +1,6 @@
 {
-	"version": "1.5.1",
-	"tstamp": 1704990527,
+	"version": "1.6",
+	"tstamp": 1704991287,
 	"files": [
 		{
 			"filename": "instance-revise-helper.php",
@@ -661,6 +661,51 @@
 			"filename": "HM-RadiatorValveState.php",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
 			"name": "HM.RadiatorValveState"
-		}
+		},
+        {
+            "filename": "HM-SetHeatingControlMode.php",
+            "location": "Scripte\\Aktions-Scripte",
+            "name": "HM.SetHeatingControlMode"
+        },
+        {
+            "filename": "HM-SetHeatingWindowState.php",
+            "location": "Scripte\\Aktions-Scripte",
+            "name": "HM.SetHeatingWindowState"
+        },
+        {
+            "filename": "HM-SetRadiatorControlMode.php",
+            "location": "Scripte\\Aktions-Scripte",
+            "name": "HM.SetRadiatorControlMode"
+        },
+        {
+            "filename": "HM-SetShutterControl.php",
+            "location": "Scripte\\Aktions-Scripte",
+            "name": "HM.SetShutterControl"
+        },
+        {
+            "filename": "HM-SetShutterPosition.php",
+            "location": "Scripte\\Aktions-Scripte",
+            "name": "HM.SetShutterPosition"
+        },
+        {
+            "filename": "HM-SetSmokeDetectorCommand.php",
+            "location": "Scripte\\Aktions-Scripte",
+            "name": "HM.SetSmokeDetectorCommand"
+        },
+        {
+            "filename": "HM-SetValueBoolean.php",
+            "location": "Scripte\\Aktions-Scripte",
+            "name": "HM.SetValueBoolean"
+        },
+        {
+            "filename": "HM-SetValueInteger.php",
+            "location": "Scripte\\Aktions-Scripte",
+            "name": "HM.SetValueInteger"
+        },
+        {
+            "filename": "IPS-SetValue.php",
+            "location": "Scripte\\Aktions-Scripte",
+            "name": "IPS.SetValue"
+        }
 	]
 }
