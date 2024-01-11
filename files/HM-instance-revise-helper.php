@@ -19,7 +19,7 @@ function HM_cmp($a, $b)
     return strcmp($a_ident, $b_ident);
 }
 
-function HM_ShowNormalize(string $type, string $address)
+function HM_ExtractNormalize(string $type, string $address, bool $write2file)
 {
     $ArchivID = GetArchivControl();
 
@@ -92,7 +92,30 @@ function HM_ShowNormalize(string $type, string $address)
     }
     $setting['name'] = $mainName;
     ksort($setting);
-    echo var_export($setting) . PHP_EOL;
+
+    $s = '<?php' . PHP_EOL;
+    $s .= PHP_EOL;
+    $s .= 'declare(strict_types=1);' . PHP_EOL;
+    $s .= PHP_EOL;
+    $s .= '$setting = ' . var_export($setting, true) . ';' . PHP_EOL;
+    $s .= PHP_EOL;
+    $s .= 'echo json_encode($setting);' . PHP_EOL;
+
+    if ($write2file) {
+        $parID = MapLocalConstant('HM_INSTANCE_REVISE_HELPER');
+        $scriptID = @IPS_GetScriptIDByName($ident, $parID);
+        if ($scriptID == false) {
+            echo 'Skript "' . $ident . '" wird angelegt' . PHP_EOL;
+            $scriptID = IPS_CreateScript(SCRIPTTYPE_PHP);
+            IPS_SetName($scriptID, $ident);
+            IPS_SetParent($scriptID, $parID);
+        } else {
+            echo 'Skript "' . $ident . '" wird aktualisiert' . PHP_EOL;
+        }
+        IPS_SetScriptContent($scriptID, $s);
+    } else {
+        echo $s;
+    }
 }
 
 function HM_Normalize(string $type, string $address, string $name = '', array $names = [])
@@ -101,14 +124,12 @@ function HM_Normalize(string $type, string $address, string $name = '', array $n
     $lnkIDs = IPS_GetLinkList();
 
     $setting = false;
-    $parID = @IPS_GetObjectIDByName('Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen', GetID4Spec('System-Scripte'));
-    if ($parID != false) {
-        $scriptID = @IPS_GetObjectIDByName($type, $parID);
-        if (IPS_ScriptExists($scriptID)) {
-            $ret = @IPS_RunScriptWait($scriptID);
-            if ($ret != false) {
-                $setting = json_decode($ret, true);
-            }
+    $parID = MapLocalConstant('HM_INSTANCE_REVISE_HELPER');
+    $scriptID = @IPS_GetObjectIDByName($type, $parID);
+    if (IPS_ScriptExists($scriptID)) {
+        $ret = @IPS_RunScriptWait($scriptID);
+        if ($ret != false) {
+            $setting = json_decode($ret, true);
         }
     }
 

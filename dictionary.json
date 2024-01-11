@@ -1,6 +1,6 @@
 {
-	"version": "1.4",
-	"tstamp": 1704905834,
+	"version": "1.5",
+	"tstamp": 1704989678,
 	"files": [
 		{
 			"filename": "instance-revise-helper.php",
@@ -58,19 +58,609 @@
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
-            "filename": "instance-revise.php",
-            "location": "Scripte\\System-Scripte",
-            "name": "Instanzen überarbeiten"
-        },
-        {
-            "filename": "HM-instance-revise-helper.php",
-            "location": "Scripte\\System-Scripte",
-            "name": "Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen"
-        },
+			"filename": "HM-instance-revise-helper.php",
+			"location": "Scripte\\System-Scripte",
+			"name": "Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen"
+		},
 		{
-            "filename": "HM-instance-revise.php",
-            "location": "Scripte\\System-Scripte",
-            "name": "HomeMatic - Instanzen überarbeiten"
-        }
+			"filename": "HmIP-BS2.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-BS2"
+		},
+		{
+			"filename": "HM-SEC-SCO.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HM-SEC-SCO"
+		},
+		{
+			"filename": "HmIP-BROLL-2.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-BROLL-2"
+		},
+		{
+			"filename": "HM-LC-Sw2PBU-FM.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HM-LC-Sw2PBU-FM"
+		},
+		{
+			"filename": "HM-LC-Sw4-Ba-PCB.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HM-LC-Sw4-Ba-PCB"
+		},
+		{
+			"filename": "HmIP-SMI55-2.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-SMI55-2"
+		},
+		{
+			"filename": "HmIP-SWSD.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-SWSD"
+		},
+		{
+			"filename": "HmIP-BDT.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-BDT"
+		},
+		{
+			"filename": "HmIP-FDT.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-FDT"
+		},
+		{
+			"filename": "HmIP-BWTH.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-BWTH"
+		},
+		{
+			"filename": "HmIP-WRC6.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-WRC6"
+		},
+		{
+			"filename": "HmIP-FSI16.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-FSI16"
+		},
+		{
+			"filename": "HmIP-BSM.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-BSM"
+		},
+		{
+			"filename": "HmIP-SPI.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-SPI"
+		},
+		{
+			"filename": "HmIP-SRH.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-SRH"
+		},
+		{
+			"filename": "HM-LC-Sw1-Ba-PCB.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HM-LC-Sw1-Ba-PCB"
+		},
+		{
+			"filename": "HM-LC-Sw2-FM.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HM-LC-Sw2-FM"
+		},
+		{
+			"filename": "HmIP-MOD-OC8.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-MOD-OC8"
+		},
+		{
+			"filename": "HM-SEC-RHS.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HM-SEC-RHS"
+		},
+		{
+			"filename": "HM-SEC-SC-2.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HM-SEC-SC-2"
+		},
+		{
+			"filename": "HmIP-PCBS-BAT.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-PCBS-BAT"
+		},
+		{
+			"filename": "HmIP-SLO.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-SLO"
+		},
+		{
+			"filename": "HmIP-WTH-1.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-WTH-1"
+		},
+		{
+			"filename": "HmIP-SWDM.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-SWDM"
+		},
+		{
+			"filename": "HmIP-eTRV-E.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-eTRV-E"
+		},
+		{
+			"filename": "HmIP-BRC2.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-BRC2"
+		},
+		{
+			"filename": "HmIP-SMO.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-SMO"
+		},
+		{
+			"filename": "HmIP-SWD.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-SWD"
+		},
+		{
+			"filename": "HmIP-eTRV-2.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-eTRV-2"
+		},
+		{
+			"filename": "HmIP-SCI.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-SCI"
+		},
+		{
+			"filename": "HmIP-BROLL.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-BROLL"
+		},
+		{
+			"filename": "HmIP-FSM.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-FSM"
+		},
+		{
+			"filename": "HmIP-WTH-2.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-WTH-2"
+		},
+		{
+			"filename": "HM-LC-Sw1-FM.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HM-LC-Sw1-FM"
+		},
+		{
+			"filename": "HmIP-STH.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-STH"
+		},
+		{
+			"filename": "HM-WDS40-TH-1-2.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HM-WDS40-TH-1-2"
+		},
+		{
+			"filename": "HM-SEN-MDIR-O-2.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HM-SEN-MDIR-O-2"
+		},
+		{
+			"filename": "HmIP-DSD-PCB.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-DSD-PCB"
+		},
+		{
+			"filename": "HmIP-FSM16.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-FSM16"
+		},
+		{
+			"filename": "HM-CC-RT-DN.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HM-CC-RT-DN"
+		},
+		{
+			"filename": "HmIP-PS.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-PS"
+		},
+		{
+			"filename": "HmIP-STHD.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-STHD"
+		},
+		{
+			"filename": "HmIP-ESI.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-ESI"
+		},
+		{
+			"filename": "HmIP-PSM.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-PSM"
+		},
+		{
+			"filename": "HmIP-HAP.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-HAP"
+		},
+		{
+			"filename": "HmIP-WRC2.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-WRC2"
+		},
+		{
+			"filename": "HmIP-SWDO-2.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-SWDO-2"
+		},
+		{
+			"filename": "HmIP-PSM-2.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-PSM-2"
+		},
+		{
+			"filename": "HmIP-MOD-RC8.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-MOD-RC8"
+		},
+		{
+			"filename": "HmIP-FROLL.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-FROLL"
+		},
+		{
+			"filename": "HM-WDS10-TH-O.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HM-WDS10-TH-O"
+		},
+		{
+			"filename": "HmIP-SWDO.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-SWDO"
+		},
+		{
+			"filename": "RPI-RF-MOD.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "RPI-RF-MOD"
+		},
+		{
+			"filename": "HM-LC-Dim1TPBU-FM.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HM-LC-Dim1TPBU-FM"
+		},
+		{
+			"filename": "HmIP-STHO.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-STHO"
+		},
+		{
+			"filename": "HmIP-WRCD.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-WRCD"
+		},
+		{
+			"filename": "HmIP-PCBS.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-PCBS"
+		},
+		{
+			"filename": "variableprofile-helper.php",
+			"location": "Scripte\\System-Scripte",
+			"name": "Hilfsfunktionen für Variablenprofile"
+		},
+		{
+			"filename": "Local-Kontakt.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Kontakt"
+		},
+		{
+			"filename": "Local-Alarm.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Alarm"
+		},
+		{
+			"filename": "Local-SecurityState.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.SecurityState"
+		},
+		{
+			"filename": "Local-Valve.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Valve"
+		},
+		{
+			"filename": "Local-HeizstrahlerAktion.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.HeizstrahlerAktion"
+		},
+		{
+			"filename": "Local-Temperatur.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Temperatur"
+		},
+		{
+			"filename": "Local-Wifi_F.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Wifi_F"
+		},
+		{
+			"filename": "Local-GaragentorStatus.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.GaragentorStatus"
+		},
+		{
+			"filename": "Local-Minuten_5.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Minuten_5"
+		},
+		{
+			"filename": "Local-Klingel.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Klingel"
+		},
+		{
+			"filename": "Local-Power_Consumption.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Power_Consumption"
+		},
+		{
+			"filename": "Local-Brightness.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Brightness"
+		},
+		{
+			"filename": "Local-Minuten.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Minuten"
+		},
+		{
+			"filename": "Local-SkylightWindow.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.SkylightWindow"
+		},
+		{
+			"filename": "Local-RaumTemperatur.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.RaumTemperatur"
+		},
+		{
+			"filename": "Local-GaragentorAktion.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.GaragentorAktion"
+		},
+		{
+			"filename": "Local-JaNein.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.JaNein"
+		},
+		{
+			"filename": "Local-AnAus.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.AnAus"
+		},
+		{
+			"filename": "Local-CameraMonitoring.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.CameraMonitoring"
+		},
+		{
+			"filename": "Local-Counter.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Counter"
+		},
+		{
+			"filename": "Local-Energy_AnnualConsumption.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Energy_AnnualConsumption"
+		},
+		{
+			"filename": "Local-Float0.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Float0"
+		},
+		{
+			"filename": "Local-GasCounter.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.GasCounter"
+		},
+		{
+			"filename": "Local-LightningSensor.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.LightningSensor"
+		},
+		{
+			"filename": "Local-Lux.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Lux"
+		},
+		{
+			"filename": "Local-MarkiseAktion.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.MarkiseAktion"
+		},
+		{
+			"filename": "Local-MarkiseAktivity.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.MarkiseAktivity"
+		},
+		{
+			"filename": "Local-Meldung_1.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Meldung_1"
+		},
+		{
+			"filename": "Local-Meldung_x.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Meldung_x"
+		},
+		{
+			"filename": "Local-Markise.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Markise"
+		},
+		{
+			"filename": "Local-NiederschlagText.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.NiederschlagText"
+		},
+		{
+			"filename": "Local-Percent_F.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Percent_F"
+		},
+		{
+			"filename": "Local-Presence.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Presence"
+		},
+		{
+			"filename": "Local-Rauchmelder-Kontakt.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Rauchmelder-Kontakt"
+		},
+		{
+			"filename": "Local-RaumFeuchte.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.RaumFeuchte"
+		},
+		{
+			"filename": "Local-Percent.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Percent"
+		},
+		{
+			"filename": "Local-RegenmengeText.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.RegenmengeText"
+		},
+		{
+			"filename": "Local-Sekunden.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Sekunden"
+		},
+		{
+			"filename": "Local-Wifi.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.Wifi"
+		},
+		{
+			"filename": "Local-WindDirection.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.WindDirection"
+		},
+		{
+			"filename": "Local-iPhone-Ort.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.iPhone-Ort"
+		},
+		{
+			"filename": "Local-ppm.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.ppm"
+		},
+		{
+			"filename": "Local-VentilationReason.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.VentilationReason"
+		},
+		{
+			"filename": "Local-AussenTemperatur.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "Local.AussenTemperatur"
+		},
+		{
+			"filename": "HM-SmokeDetectorTestResult.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "HM.SmokeDetectorTestResult"
+		},
+		{
+			"filename": "HM-SmokeDetectorChamberStatus.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "HM.SmokeDetectorChamberStatus"
+		},
+		{
+			"filename": "HM-HeatingWindowState.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "HM.HeatingWindowState"
+		},
+		{
+			"filename": "HM-HeatingValveLevel.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "HM.HeatingValveLevel"
+		},
+		{
+			"filename": "HM-HeatingControlMode.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "HM.HeatingControlMode"
+		},
+		{
+			"filename": "HM-EnergyMeterCounterStatus.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "HM.EnergyMeterCounterStatus"
+		},
+		{
+			"filename": "HM-Door.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "HM.Door"
+		},
+		{
+			"filename": "HM-AlReceipt.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "HM.AlReceipt"
+		},
+		{
+			"filename": "HM-SmokeDetectorOperationTime.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "HM.SmokeDetectorOperationTime"
+		},
+		{
+			"filename": "HM-Contact.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "HM.Contact"
+		},
+		{
+			"filename": "HM-SmokeDetectorAlarmStatus.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "HM.SmokeDetectorAlarmStatus"
+		},
+		{
+			"filename": "HM-ShutterPosition-Reversed.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "HM.ShutterPosition.Reversed"
+		},
+		{
+			"filename": "HM-ShutterStatus-Reversed.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "HM.ShutterStatus.Reversed"
+		},
+		{
+			"filename": "HM-SmokeDetectorCommand.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "HM.SmokeDetectorCommand"
+		},
+		{
+			"filename": "HM-ShutterControl.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "HM.ShutterControl"
+		},
+		{
+			"filename": "HM-ShutterActivity.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "HM.ShutterActivity"
+		},
+		{
+			"filename": "HM-EnergyMeterOperationMode.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "HM.EnergyMeterOperationMode"
+		},
+		{
+			"filename": "HM-RadiatorValveState.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen für Variablenprofile",
+			"name": "HM.RadiatorValveState"
+		}
 	]
 }

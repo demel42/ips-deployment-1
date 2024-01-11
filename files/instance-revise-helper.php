@@ -19,7 +19,7 @@ function Instance_cmp($a, $b)
     return strcmp($a_ident, $b_ident);
 }
 
-function Instance_ShowNormalize(int $instID)
+function Instance_ExtractNormalize(int $instID, bool $write2file)
 {
     $ArchivID = GetArchivControl();
 
@@ -87,7 +87,29 @@ function Instance_ShowNormalize(int $instID)
         $settings[$ident] = $i;
     }
 
-    echo var_export($settings) . PHP_EOL;
+    $s = '<?php' . PHP_EOL;
+    $s .= PHP_EOL;
+    $s .= 'declare(strict_types=1);' . PHP_EOL;
+    $s .= PHP_EOL;
+    $s .= '$setting = ' . var_export($settings) . ';' . PHP_EOL;
+    $s .= PHP_EOL;
+    $s .= 'echo json_encode($setting);' . PHP_EOL;
+
+    if ($write2file) {
+        $parID = MapLocalConstant('INSTANCE_REVISE_HELPER');
+        $scriptID = @IPS_GetScriptIDByName($ident, $parID);
+        if ($scriptID == false) {
+            echo 'Skript "' . $ident . '" wird angelegt' . PHP_EOL;
+            $scriptID = IPS_CreateScript(SCRIPTTYPE_PHP);
+            IPS_SetName($scriptID, $ident);
+            IPS_SetParent($scriptID, $parID);
+        } else {
+            echo 'Skript "' . $ident . '" wird aktualisiert' . PHP_EOL;
+        }
+        IPS_SetScriptContent($scriptID, $s);
+    } else {
+        echo $s;
+    }
 }
 
 function Instance_Normalize(int $instID, string $type)
@@ -95,14 +117,12 @@ function Instance_Normalize(int $instID, string $type)
     $ArchivID = GetArchivControl();
 
     $setting = false;
-    $parID = @IPS_GetObjectIDByName('Hilfsfunktionen zur Überarbeitung von Instanzen', GetID4Spec('System-Scripte'));
-    if ($parID != false) {
-        $scriptID = @IPS_GetObjectIDByName($type, $parID);
-        if (IPS_ScriptExists($scriptID)) {
-            $ret = @IPS_RunScriptWait($scriptID);
-            if ($ret != false) {
-                $setting = json_decode($ret, true);
-            }
+    $parID = MapLocalConstant('INSTANCE_REVISE_HELPER');
+    $scriptID = @IPS_GetObjectIDByName($type, $parID);
+    if (IPS_ScriptExists($scriptID)) {
+        $ret = @IPS_RunScriptWait($scriptID);
+        if ($ret != false) {
+            $setting = json_decode($ret, true);
         }
     }
 
