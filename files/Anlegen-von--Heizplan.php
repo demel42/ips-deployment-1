@@ -16,7 +16,7 @@ function Make_Heizplan($destID)
     $varValue = [20.0, 18.0, 24.0];
     $envColor = [0x6EA55A, 0x148CE6, 0xFA5555];
 
-    $varActionID = IPS_GetObjectIDByName('IPS.SetValue', 10920);
+    $varActionID = IPS_GetObjectIDByName('IPS.SetValue', MapLocalConstant('Aktions-Scripte'));
 
     for ($i = 0; $i < 3; $i++) {
         $varID = IPS_CreateVariable(VARIABLETYPE_FLOAT);
@@ -40,4 +40,4 @@ function Make_Heizplan($destID)
     IPS_SetEventScheduleGroupPoint($evnID, 0, 0, 0, 0, 0, 1);
 }
 
-// Make_Heizplan(27414);
+// Make_Heizplan(<varID von "Soll-Temperatur">);

@@ -17,7 +17,7 @@ function Make_Bewegungsplan($destID)
     $varValue = [0.0 /* Unten */, 1.0 /* Oben */];
     $envColor = [0x0541AF, 0xFAFF5A];
 
-    $varActionID = IPS_GetObjectIDByName('IPS.SetValue', 10920);
+    $varActionID = IPS_GetObjectIDByName('IPS.SetValue', MapLocalConstant('Aktions-Scripte'));
 
     for ($i = 0; $i < 2; $i++) {
         $varID = IPS_CreateVariable(VARIABLETYPE_FLOAT);
@@ -41,4 +41,4 @@ function Make_Bewegungsplan($destID)
     IPS_SetEventScheduleGroupPoint($evnID, 0, 0, 0, 0, 0, 1);
 }
 
-// Make_Bewegungsplan(xxxxx);
+// Make_Bewegungsplan(<varID von "Soll-Rolladenhöhe");
