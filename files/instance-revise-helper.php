@@ -173,7 +173,7 @@ function Instance_Normalize(int $instID, string $type)
         } elseif (isset($item['customAction'])) {
             $action = $item['customAction'];
             if (is_numeric($action) == false) {
-                $action = @IPS_GetObjectIDByName($action, GetID4Spec('Aktions-Scripte'));
+                $action = @IPS_GetObjectIDByName($action, MapLocalConstant('Aktions-Scripte'));
                 if ($action == false) {
                     echo 'unknown customAction "' . $item['customAction'] . '"' . PHP_EOL;
                     $action = 0;

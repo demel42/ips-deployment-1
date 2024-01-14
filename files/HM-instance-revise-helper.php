@@ -216,7 +216,7 @@ function HM_Normalize(string $type, string $address, string $name = '', array $n
                 } elseif (isset($item['customAction'])) {
                     $action = $item['customAction'];
                     if (is_numeric($action) == false) {
-                        $action = @IPS_GetObjectIDByName($action, GetID4Spec('Aktions-Scripte'));
+                        $action = @IPS_GetObjectIDByName($action, MapLocalConstant('Aktions-Scripte'));
                         if ($action == false) {
                             echo 'unknown customAction "' . $item['customAction'] . '"' . PHP_EOL;
                             $action = 0;
@@ -283,7 +283,7 @@ function HM_Normalize4Type(string $type)
 {
     $addrV = [];
 
-    $catID = IPS_GetObjectIDByName($type, GetID4Spec('Geräte-Typen'));
+    $catID = IPS_GetObjectIDByName($type, MapLocalConstant('Geräte-Typen'));
     $objIDs = IPS_GetChildrenIDs($catID);
     foreach ($objIDs as $objID) {
         $lnk = IPS_GetLink($objID);
@@ -305,7 +305,7 @@ function HM_Show4Type(string $type)
     $addrV = [];
     $addr2nameV = [];
 
-    $catID = IPS_GetObjectIDByName($type, GetID4Spec('Geräte-Typen'));
+    $catID = IPS_GetObjectIDByName($type, MapLocalConstant('Geräte-Typen'));
     if ($catID == false) {
         echo 'Objekt mit Typ "' . $type . '" nicht in "Geräte-Typen" gefunden' . PHP_EOL;
         return;
