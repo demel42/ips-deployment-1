@@ -1,6 +1,6 @@
 {
-	"version": "1.7",
-	"tstamp": 1705053438,
+	"version": "1.8",
+    "tstamp": 1705230024,
 	"files": [
 		{
 			"filename": "instance-revise-helper.php",
@@ -713,6 +713,21 @@
 			"filename": "IPS-SetValue.php",
 			"location": "Scripte\\Aktions-Scripte",
 			"name": "IPS.SetValue"
-		}
-	]
+		},
+        {
+            "filename": "Anlegen-von--Bewegungsplan.php",
+            "location": "Scripte\\System-Scripte",
+            "name": "Anlegen von: Bewegungsplan"
+        },
+        {
+            "filename": "Anlegen-von--Heizplan.php",
+            "location": "Scripte\\System-Scripte",
+            "name": "Anlegen von: Heizplan"
+        },
+        {
+            "filename": "Anlegen-von--Rolladenhöhe-begrenzen.php",
+            "location": "Scripte\\System-Scripte",
+            "name": "Anlegen von: Rolladenhöhe begrenzen"
+        }
+    ]
 }
