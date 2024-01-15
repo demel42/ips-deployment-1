@@ -21,7 +21,7 @@ function Instance_cmp($a, $b)
 
 function Instance_ExtractNormalize(int $instID, bool $write2file)
 {
-    $ArchivID = GetArchivControl();
+    $ArchivID = GetLocalConfig('Archive Control');
 
     $items = [];
 
@@ -114,7 +114,7 @@ function Instance_ExtractNormalize(int $instID, bool $write2file)
 
 function Instance_Normalize(int $instID, string $type)
 {
-    $ArchivID = GetArchivControl();
+    $ArchivID = GetLocalConfig('Archive Control');
 
     $setting = false;
     $parID = GetLocalConfig('INSTANCE_REVISE_HELPER');

@@ -21,7 +21,7 @@ function HM_cmp($a, $b)
 
 function HM_ExtractNormalize(string $type, string $address, bool $write2file)
 {
-    $ArchivID = GetArchivControl();
+    $ArchivID = GetLocalConfig('Archive Control');
 
     $setting = [];
     $setting['name'] = '';
@@ -120,7 +120,7 @@ function HM_ExtractNormalize(string $type, string $address, bool $write2file)
 
 function HM_Normalize(string $type, string $address, string $name = '', array $names = [])
 {
-    $ArchivID = GetArchivControl();
+    $ArchivID = GetLocalConfig('Archive Control');
     $lnkIDs = IPS_GetLinkList();
 
     $setting = false;
