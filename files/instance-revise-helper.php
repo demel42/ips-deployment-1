@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require_once IPS_GetScriptFile(MapLocalConstant('HELPER_GLOBAL'));
+require_once IPS_GetScriptFile(GetLocalConfig('GLOBAL_HELPER'));
 
 function Instance_cmp($a, $b)
 {
@@ -96,7 +96,7 @@ function Instance_ExtractNormalize(int $instID, bool $write2file)
     $s .= 'echo json_encode($setting);' . PHP_EOL;
 
     if ($write2file) {
-        $parID = MapLocalConstant('INSTANCE_REVISE_HELPER');
+        $parID = GetLocalConfig('INSTANCE_REVISE_HELPER');
         $scriptID = @IPS_GetScriptIDByName($ident, $parID);
         if ($scriptID == false) {
             echo 'Skript "' . $ident . '" wird angelegt' . PHP_EOL;
@@ -117,7 +117,7 @@ function Instance_Normalize(int $instID, string $type)
     $ArchivID = GetArchivControl();
 
     $setting = false;
-    $parID = MapLocalConstant('INSTANCE_REVISE_HELPER');
+    $parID = GetLocalConfig('INSTANCE_REVISE_HELPER');
     $scriptID = @IPS_GetObjectIDByName($type, $parID);
     if (IPS_ScriptExists($scriptID)) {
         $ret = @IPS_RunScriptWait($scriptID);
@@ -173,7 +173,7 @@ function Instance_Normalize(int $instID, string $type)
         } elseif (isset($item['customAction'])) {
             $action = $item['customAction'];
             if (is_numeric($action) == false) {
-                $action = @IPS_GetObjectIDByName($action, MapLocalConstant('Aktions-Scripte'));
+                $action = @IPS_GetObjectIDByName($action, GetLocalConfig('Aktions-Scripte'));
                 if ($action == false) {
                     echo 'unknown customAction "' . $item['customAction'] . '"' . PHP_EOL;
                     $action = 0;

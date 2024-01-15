@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require_once IPS_GetScriptFile(MapLocalConstant('HELPER_GLOBAL'));
+require_once IPS_GetScriptFile(GetLocalConfig('GLOBAL_HELPER'));
 
 function HM_cmp($a, $b)
 {
@@ -102,7 +102,7 @@ function HM_ExtractNormalize(string $type, string $address, bool $write2file)
     $s .= 'echo json_encode($setting);' . PHP_EOL;
 
     if ($write2file) {
-        $parID = MapLocalConstant('HM_INSTANCE_REVISE_HELPER');
+        $parID = GetLocalConfig('HM_INSTANCE_REVISE_HELPER');
         $scriptID = @IPS_GetScriptIDByName($ident, $parID);
         if ($scriptID == false) {
             echo 'Skript "' . $ident . '" wird angelegt' . PHP_EOL;
@@ -124,7 +124,7 @@ function HM_Normalize(string $type, string $address, string $name = '', array $n
     $lnkIDs = IPS_GetLinkList();
 
     $setting = false;
-    $parID = MapLocalConstant('HM_INSTANCE_REVISE_HELPER');
+    $parID = GetLocalConfig('HM_INSTANCE_REVISE_HELPER');
     $scriptID = @IPS_GetObjectIDByName($type, $parID);
     if (IPS_ScriptExists($scriptID)) {
         $ret = @IPS_RunScriptWait($scriptID);
@@ -216,7 +216,7 @@ function HM_Normalize(string $type, string $address, string $name = '', array $n
                 } elseif (isset($item['customAction'])) {
                     $action = $item['customAction'];
                     if (is_numeric($action) == false) {
-                        $action = @IPS_GetObjectIDByName($action, MapLocalConstant('Aktions-Scripte'));
+                        $action = @IPS_GetObjectIDByName($action, GetLocalConfig('Aktions-Scripte'));
                         if ($action == false) {
                             echo 'unknown customAction "' . $item['customAction'] . '"' . PHP_EOL;
                             $action = 0;
@@ -283,7 +283,7 @@ function HM_Normalize4Type(string $type)
 {
     $addrV = [];
 
-    $catID = IPS_GetObjectIDByName($type, MapLocalConstant('Geräte-Typen'));
+    $catID = IPS_GetObjectIDByName($type, GetLocalConfig('Geräte-Typen'));
     $objIDs = IPS_GetChildrenIDs($catID);
     foreach ($objIDs as $objID) {
         $lnk = IPS_GetLink($objID);
@@ -305,7 +305,7 @@ function HM_Show4Type(string $type)
     $addrV = [];
     $addr2nameV = [];
 
-    $catID = IPS_GetObjectIDByName($type, MapLocalConstant('Geräte-Typen'));
+    $catID = IPS_GetObjectIDByName($type, GetLocalConfig('Geräte-Typen'));
     if ($catID == false) {
         echo 'Objekt mit Typ "' . $type . '" nicht in "Geräte-Typen" gefunden' . PHP_EOL;
         return;

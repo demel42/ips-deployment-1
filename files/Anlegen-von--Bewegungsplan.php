@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require_once IPS_GetScriptFile(MapLocalConstant('HELPER_GLOBAL'));
+require_once IPS_GetScriptFile(GetLocalConfig('GLOBAL_HELPER'));
 
 function Make_Bewegungsplan($destID)
 {
@@ -17,7 +17,7 @@ function Make_Bewegungsplan($destID)
     $varValue = [0.0 /* Unten */, 1.0 /* Oben */];
     $envColor = [0x0541AF, 0xFAFF5A];
 
-    $varActionID = IPS_GetObjectIDByName('IPS.SetValue', MapLocalConstant('Aktions-Scripte'));
+    $varActionID = IPS_GetObjectIDByName('IPS.SetValue', GetLocalConfig('Aktions-Scripte'));
 
     for ($i = 0; $i < 2; $i++) {
         $varID = IPS_CreateVariable(VARIABLETYPE_FLOAT);

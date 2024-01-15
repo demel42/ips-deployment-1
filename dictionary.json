@@ -1,6 +1,6 @@
 {
-	"version": "1.8.1",
-    "tstamp": 1705252271,
+	"version": "1.9",
+    "tstamp": 1705310985,
 	"files": [
 		{
 			"filename": "instance-revise-helper.php",
@@ -725,7 +725,7 @@
             "name": "Anlegen von: Heizplan"
         },
         {
-            "filename": "Anlegen-von--Rolladenhöhe-begrenzen.php",
+            "filename": "Anlegen-von--Rolladenhoehe-begrenzen.php",
             "location": "Scripte\\System-Scripte",
             "name": "Anlegen von: Rolladenhöhe begrenzen"
         }

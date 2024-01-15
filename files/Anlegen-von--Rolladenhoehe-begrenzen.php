@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-require_once IPS_GetScriptFile(MapLocalConstant('HELPER_GLOBAL'));
+require_once IPS_GetScriptFile(GetLocalConfig('GLOBAL_HELPER'));
 
 function Make_ShutterMinimumLevel($destID)
 {
-    $varActionID = IPS_GetObjectIDByName('IPS.SetValue', MapLocalConstant('Aktions-Scripte'));
+    $varActionID = IPS_GetObjectIDByName('IPS.SetValue', GetLocalConfig('Aktions-Scripte'));
 
     $varID = IPS_CreateVariable(VARIABLETYPE_FLOAT);
     IPS_SetParent($varID, $destID);

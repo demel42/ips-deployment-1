@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require_once IPS_GetScriptFile(MapLocalConstant('HELPER_GLOBAL'));
+require_once IPS_GetScriptFile(GetLocalConfig('GLOBAL_HELPER'));
 
 function VariableProfile_Extract(string $ident, bool $write2file)
 {
@@ -36,7 +36,7 @@ function VariableProfile_Extract(string $ident, bool $write2file)
         $s .= 'echo json_encode($setting);' . PHP_EOL;
 
         if ($write2file) {
-            MapLocalConstant('VARIABLEPROFILE_HELPER');
+            GetLocalConfig('VARIABLEPROFILE_HELPER');
             $scriptID = @IPS_GetScriptIDByName($ident, $parID);
             if ($scriptID == false) {
                 echo 'Skript "' . $ident . '" wird angelegt' . PHP_EOL;
@@ -56,7 +56,7 @@ function VariableProfile_Extract(string $ident, bool $write2file)
 function VariableProfile_Create(string $ident, bool $overwrite)
 {
     $setting = false;
-    MapLocalConstant('VARIABLEPROFILE_HELPER');
+    $parID = GetLocalConfig('VARIABLEPROFILE_HELPER');
     $scriptID = @IPS_GetObjectIDByName($ident, $parID);
     if (IPS_ScriptExists($scriptID)) {
         $ret = @IPS_RunScriptWait($scriptID);

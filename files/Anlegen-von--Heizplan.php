@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require_once IPS_GetScriptFile(MapLocalConstant('HELPER_GLOBAL'));
+require_once IPS_GetScriptFile(GetLocalConfig('GLOBAL_HELPER'));
 
 function Make_Heizplan($destID)
 {
@@ -16,7 +16,7 @@ function Make_Heizplan($destID)
     $varValue = [20.0, 18.0, 24.0];
     $envColor = [0x6EA55A, 0x148CE6, 0xFA5555];
 
-    $varActionID = IPS_GetObjectIDByName('IPS.SetValue', MapLocalConstant('Aktions-Scripte'));
+    $varActionID = IPS_GetObjectIDByName('IPS.SetValue', GetLocalConfig('Aktions-Scripte'));
 
     for ($i = 0; $i < 3; $i++) {
         $varID = IPS_CreateVariable(VARIABLETYPE_FLOAT);
