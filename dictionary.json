@@ -1,12 +1,12 @@
 {
-	"version": "1.9",
-    "tstamp": 1705313629,
+	"version": "1.10",
+	"tstamp": 1705316456,
 	"files": [
 		{
 			"filename": "instance-revise-helper.php",
 			"name": "Hilfsfunktionen zur Überarbeitung von Instanzen",
 			"location": "Scripte\\System-Scripte",
-			"requires": [ "HELPER_GLOBAL", "INSTANCE_REVISE_HELPER" ]
+			"requires": [ "GLOBAL_HELPER", "INSTANCE_REVISE_HELPER", "Archive Control", "Aktions-Scripte" ]
 		},
 		{
 			"filename": "fibaro-fgcd-001.php",
@@ -62,7 +62,7 @@
 			"filename": "HM-instance-revise-helper.php",
 			"location": "Scripte\\System-Scripte",
 			"name": "Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"requires": [ "HELPER_GLOBAL", "HM_INSTANCE_REVISE_HELPER" ]
+			"requires": [ "GLOBAL_HELPER", "HM_INSTANCE_REVISE_HELPER", "Archive Control", "Util Control", "Aktions-Scripte", "Geräte-Typen" ]
 		},
 		{
 			"filename": "HmIP-BS2.php",
@@ -353,7 +353,7 @@
 			"filename": "variableprofile-helper.php",
 			"location": "Scripte\\System-Scripte",
 			"name": "Hilfsfunktionen für Variablenprofile",
-			"requires": [ "HELPER_GLOBAL", "VARIABLEPROFILE_HELPER" ]
+			"requires": [ "GLOBAL_HELPER", "VARIABLEPROFILE_HELPER" ]
 		},
 		{
 			"filename": "Local-Kontakt.php",
@@ -669,13 +669,13 @@
 			"filename": "HM-SetHeatingControlMode.php",
 			"location": "Scripte\\Aktions-Scripte",
 			"name": "HM.SetHeatingControlMode",
-			"requires": [ "HELPER_GLOBAL" ]
+			"requires": [ "GLOBAL_HELPER" ]
 		},
 		{
 			"filename": "HM-SetHeatingWindowState.php",
 			"location": "Scripte\\Aktions-Scripte",
 			"name": "HM.SetHeatingWindowState",
-			"requires": [ "HELPER_GLOBAL" ]
+			"requires": [ "GLOBAL_HELPER" ]
 		},
 		{
 			"filename": "HM-SetRadiatorControlMode.php",
@@ -686,13 +686,13 @@
 			"filename": "HM-SetShutterControl.php",
 			"location": "Scripte\\Aktions-Scripte",
 			"name": "HM.SetShutterControl",
-			"requires": [ "HELPER_GLOBAL" ]
+			"requires": [ "GLOBAL_HELPER" ]
 		},
 		{
 			"filename": "HM-SetShutterPosition.php",
 			"location": "Scripte\\Aktions-Scripte",
 			"name": "HM.SetShutterPosition",
-			"requires": [ "HELPER_GLOBAL" ]
+			"requires": [ "GLOBAL_HELPER" ]
 		},
 		{
 			"filename": "HM-SetSmokeDetectorCommand.php",
@@ -714,20 +714,81 @@
 			"location": "Scripte\\Aktions-Scripte",
 			"name": "IPS.SetValue"
 		},
-        {
-            "filename": "Anlegen-von--Bewegungsplan.php",
-            "location": "Scripte\\System-Scripte",
-            "name": "Anlegen von: Bewegungsplan"
-        },
-        {
-            "filename": "Anlegen-von--Heizplan.php",
-            "location": "Scripte\\System-Scripte",
-            "name": "Anlegen von: Heizplan"
-        },
-        {
-            "filename": "Anlegen-von--Rolladenhoehe-begrenzen.php",
-            "location": "Scripte\\System-Scripte",
-            "name": "Anlegen von: Rolladenhöhe begrenzen"
-        }
-    ]
+		{
+			"filename": "create_movement-plan.php",
+			"location": "Scripte\\System-Scripte",
+			"name": "Anlegen von: Bewegungsplan",
+			"requires": [ "GLOBAL_HELPER", "Aktions-Scripte" ]
+		},
+		{
+			"filename": "create_heating-plan.php",
+			"location": "Scripte\\System-Scripte",
+			"name": "Anlegen von: Heizplan",
+			"requires": [ "GLOBAL_HELPER", "Aktions-Scripte" ]
+		},
+		{
+			"filename": "create_limit-shutter-height.php",
+			"location": "Scripte\\System-Scripte",
+			"name": "Anlegen von: Rolladenhöhe begrenzen",
+			"requires": [ "GLOBAL_HELPER", "Aktions-Scripte" ]
+		},
+		{
+			"filename": "check-link-defects.php",
+			"location": "Scripte\\System-Scripte",
+			"name": "Check Link-Defects"
+		},
+		{
+			"filename": "check-link-duplicates.php",
+			"location": "Scripte\\System-Scripte",
+			"name": "Check Link-Duplicates"
+		},
+		{
+			"filename": "check-link-references.php",
+			"location": "Scripte\\System-Scripte",
+			"name": "Check Link-References"
+		},
+		{
+			"filename": "activate-debug.php",
+			"location": "Scripte\\System-Scripte",
+			"name": "Debug aktivieren"
+		},
+		{
+			"filename": "ConnectControl-details.php",
+			"location": "Scripte\\System-Scripte",
+			"name": "Detail von ConnectControl",
+			"requires": [ "Connect Control" ]
+		},
+		{
+			"filename": "global-helper.php",
+			"location": "Scripte\\System-Scripte",
+			"name": "Hilfsfunktionen",
+			"requires": [ "Location Control", "Geräte-Typen", "NoticeBase" ]
+		},
+		{
+			"filename": "imap-helper.php",
+			"location": "Scripte\\System-Scripte",
+			"name": "Hilfsfunktionen für IMAP"
+		},
+		{
+			"filename": "instance-details.php",
+			"location": "Scripte\\System-Scripte",
+			"name": "Instanz-Details anzeigen",
+			"requires": [ "Module Control", "Store Control" ]
+		},
+		{
+			"filename": "libraries-list.php",
+			"location": "Scripte\\System-Scripte",
+			"name": "Liste der Bibliotheken"
+		},
+		{
+			"filename": "functions-list.php",
+			"location": "Scripte\\System-Scripte",
+			"name": "Liste der Funktionen"
+		},
+		{
+			"filename": "modules-list.php",
+			"location": "Scripte\\System-Scripte",
+			"name": "Liste der Module"
+		}
+	]
 }
