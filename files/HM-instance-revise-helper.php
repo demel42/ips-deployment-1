@@ -240,7 +240,7 @@ function HM_Normalize(string $type, string $address, string $name = '', array $n
                 }
             }
         } else {
-            $ucID = GetUtilControl();
+            $ucID = GetLocalConfig('Util Control');
             /*
                 $isReferenced = false;
                 $refs = UC_FindReferences($ucID, $instID);
