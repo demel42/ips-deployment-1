@@ -1,1 +1,1 @@
-# ips-deployment-1
+# ips-deployment-basics
