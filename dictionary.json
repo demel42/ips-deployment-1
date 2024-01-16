@@ -1,6 +1,6 @@
 {
-	"version": "1.10",
-	"tstamp": 1705316456,
+	"version": "1.11",
+	"tstamp": 1705411470,
 	"files": [
 		{
 			"filename": "instance-revise-helper.php",
@@ -19,42 +19,42 @@
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
-			"filename": "miflora.php",
+			"filename": "MiFlora.php",
 			"name": "MiFlora",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
-			"filename": "shelly_plus2pm.php",
+			"filename": "Shelly-Plus2PM.php",
 			"name": "Shelly Plus2PM",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
-			"filename": "shelly_pro3em.php",
+			"filename": "Shelly-Pro3EM.php",
 			"name": "Shelly Pro3EM",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
-			"filename": "tasmota-aisirer-awp02l.php",
+			"filename": "Tasmota-AISIRER-AWP07L.php",
 			"name": "Tasmota AISIRER AWP07L",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
-			"filename": "tasmota-bt.php",
+			"filename": "TasmotaBT.php",
 			"name": "TasmotaBT",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
-			"filename": "tasmota-gosund-ep2.php",
+			"filename": "Tasmota-Gosund-EP2.php",
 			"name": "Tasmota Gosund EP2",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
-			"filename": "tasmota-nous-at1.php",
+			"filename": "Tasmota-NOUS-A1T.php",
 			"name": "Tasmota NOUS A1T",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
-			"filename": "tasmota-shelly25.php",
+			"filename": "Tasmota-Shelly25.php",
 			"name": "Tasmota Shelly 2.5",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
@@ -733,22 +733,22 @@
 			"requires": [ "GLOBAL_HELPER", "Aktions-Scripte" ]
 		},
 		{
-			"filename": "check-link-defects.php",
+			"filename": "check_link-defects.php",
 			"location": "Scripte\\System-Scripte",
 			"name": "Check Link-Defects"
 		},
 		{
-			"filename": "check-link-duplicates.php",
+			"filename": "check_link-duplicates.php",
 			"location": "Scripte\\System-Scripte",
 			"name": "Check Link-Duplicates"
 		},
 		{
-			"filename": "check-link-references.php",
+			"filename": "check_link-references.php",
 			"location": "Scripte\\System-Scripte",
 			"name": "Check Link-References"
 		},
 		{
-			"filename": "activate-debug.php",
+			"filename": "activate_debug.php",
 			"location": "Scripte\\System-Scripte",
 			"name": "Debug aktivieren"
 		},
@@ -770,23 +770,23 @@
 			"name": "Hilfsfunktionen für IMAP"
 		},
 		{
-			"filename": "instance-details.php",
+			"filename": "show_instance-details.php",
 			"location": "Scripte\\System-Scripte",
 			"name": "Instanz-Details anzeigen",
 			"requires": [ "Module Control", "Store Control" ]
 		},
 		{
-			"filename": "libraries-list.php",
+			"filename": "list_libraries.php",
 			"location": "Scripte\\System-Scripte",
 			"name": "Liste der Bibliotheken"
 		},
 		{
-			"filename": "functions-list.php",
+			"filename": "list_functions.php",
 			"location": "Scripte\\System-Scripte",
 			"name": "Liste der Funktionen"
 		},
 		{
-			"filename": "modules-list.php",
+			"filename": "list_modules.php",
 			"location": "Scripte\\System-Scripte",
 			"name": "Liste der Module"
 		}

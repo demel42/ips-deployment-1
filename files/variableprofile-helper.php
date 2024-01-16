@@ -67,14 +67,14 @@ function VariableProfile_Create(string $ident, bool $overwrite)
 
     if ($setting == false) {
         echo 'unbekanntes Variablenprofil "' . $ident . '"' . PHP_EOL;
-        return;
+        return false;
     }
 
     $ident = $setting['ProfileName'];
     if (IPS_VariableProfileExists($ident)) {
         if ($overwrite == false) {
             echo 'Variablenprofil "' . $ident . '" existiert bereits und wird nicht überschrieben' . PHP_EOL;
-            return;
+            return false;
         }
         echo 'Variablenprofil "' . $ident . '" wird überschrieben' . PHP_EOL;
         IPS_DeleteVariableProfile($ident);
@@ -92,4 +92,41 @@ function VariableProfile_Create(string $ident, bool $overwrite)
     foreach ($setting['Associations'] as $a) {
         IPS_SetVariableProfileAssociation($ident, $a['Value'], $a['Name'], $a['Icon'], $a['Color']);
     }
+
+    return true;
+}
+
+function VariableProfile_Extend(string $ident, array $association)
+{
+    if (IPS_VariableProfileExists($ident) == false) {
+        echo 'unbekanntes Variablenprofil "' . $ident . '"' . PHP_EOL;
+        return false;
+    }
+    $vp = IPS_GetVariableProfile($ident);
+    if ($vp['ProfileType'] != VARIABLETYPE_STRING) {
+        echo 'Variablenprofil ist nicht vom typ "STRING"' . PHP_EOL;
+        return false;
+    }
+    if (isset($association['value']) == false) {
+        echo '"value" fehlt' . PHP_EOL;
+        return false;
+    }
+
+    $value = $association['value'];
+    $name = isset($association['name']) ? $association['name'] : $value;
+    $icon = isset($association['icon']) ? $association['icon'] : '';
+    $color = isset($association['color']) ? $association['color'] : -1;
+
+    $fnd = false;
+    foreach ($vp['Associations'] as $a) {
+        if ($a['Value'] == $value) {
+            $fnd = true;
+            break;
+        }
+    }
+    if ($fnd == false) {
+        IPS_SetVariableProfileAssociation($ident, $value, $name, $icon, $color);
+    }
+
+    return true;
 }
