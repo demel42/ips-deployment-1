@@ -9,7 +9,7 @@
 			"requires": [ "GLOBAL_HELPER", "INSTANCE_REVISE_HELPER", "Archive Control", "Aktions-Scripte" ]
 		},
 		{
-			"filename": "fibaro-fgcd-001.php",
+			"filename": "Fibaro-FGCD-001.php",
 			"name": "Fibaro FGCD-001",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
