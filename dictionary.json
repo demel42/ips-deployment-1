@@ -1,6 +1,6 @@
 {
-	"version": "1.11",
-	"tstamp": 1705411470,
+	"version": "1.12",
+	"tstamp": 1705413279,
 	"files": [
 		{
 			"filename": "instance-revise-helper.php",
@@ -753,7 +753,7 @@
 			"name": "Debug aktivieren"
 		},
 		{
-			"filename": "ConnectControl-details.php",
+			"filename": "show_ConnectControl-details.php",
 			"location": "Scripte\\System-Scripte",
 			"name": "Detail von ConnectControl",
 			"requires": [ "Connect Control" ]
