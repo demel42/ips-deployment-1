@@ -1,6 +1,6 @@
 {
-	"version": "1.12",
-	"tstamp": 1705413279,
+	"version": "1.13",
+    "tstamp": 1705506530,
 	"files": [
 		{
 			"filename": "instance-revise-helper.php",
@@ -755,7 +755,7 @@
 		{
 			"filename": "show_ConnectControl-details.php",
 			"location": "Scripte\\System-Scripte",
-			"name": "Detail von ConnectControl",
+			"name": "Detail von ConnectControl anzeigen",
 			"requires": [ "Connect Control" ]
 		},
 		{
@@ -789,6 +789,18 @@
 			"filename": "list_modules.php",
 			"location": "Scripte\\System-Scripte",
 			"name": "Liste der Module"
-		}
+		},
+        {
+            "filename": "variable-helper.php",
+            "location": "Scripte\\System-Scripte",
+            "name": "Hilfsfunktionen für Variablen",
+			"requires": [ "GLOBAL_HELPER" ]
+        },
+        {
+            "filename": "event-helper.php",
+            "location": "Scripte\\System-Scripte",
+            "name": "Hilfsfunktionen für Ereignisse",
+			"requires": [ "GLOBAL_HELPER" ]
+        }
 	]
 }

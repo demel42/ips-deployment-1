@@ -1032,31 +1032,6 @@ function ExecuteScheduledAction($devID, $varID, $env)
     IPS_LogMessage($env['EVENT'], $eventInfo . ': ' . $actionName . ' => ' . ($r ? 'ok' : 'fail'));
 }
 
-function CreateVarProfile(string $ident, int $varType, string $suffix, float $min, float $max, float $stepSize, int $digits, string $icon, $associations = null, bool $doReinstall)
-{
-    if ($doReinstall && IPS_VariableProfileExists($ident)) {
-        IPS_DeleteVariableProfile($ident);
-    }
-    if (!IPS_VariableProfileExists($ident)) {
-        IPS_CreateVariableProfile($ident, $varType);
-        IPS_SetVariableProfileText($ident, '', $suffix);
-        if (in_array($varType, [VARIABLETYPE_INTEGER, VARIABLETYPE_FLOAT])) {
-            IPS_SetVariableProfileValues($ident, $min, $max, $stepSize);
-            IPS_SetVariableProfileDigits($ident, $digits);
-        }
-        IPS_SetVariableProfileIcon($ident, $icon);
-        if ($associations != null) {
-            foreach ($associations as $a) {
-                $w = isset($a['Wert']) ? $a['Wert'] : '';
-                $n = isset($a['Name']) ? $a['Name'] : '';
-                $i = isset($a['Icon']) ? $a['Icon'] : '';
-                $f = isset($a['Farbe']) ? $a['Farbe'] : 0;
-                IPS_SetVariableProfileAssociation($ident, $w, $n, $i, $f);
-            }
-        }
-    }
-}
-
 function CreateVariable(int $parent, string $ident, string $name, int $varType, string $varProf, int $action, int $pos)
 {
     if ($ident == '') {
