@@ -47,7 +47,7 @@ $setting = [
         'CONTROL_MODE' => [
             'name'          => 'Betriebsmodus',
             'customProfile' => 'HM.RadiatorControlMode',
-            'customAction'  => 20137,
+            'customAction'  => 'HM.SetRadiatorControlMode',
             'doArchive'     => true,
         ],
         'FAULT_REPORTING' => [

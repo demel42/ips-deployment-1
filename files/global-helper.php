@@ -706,6 +706,8 @@ function HM_ShutterCreateExtraVariables($instID)
 {
     $chan4 = HM_GetInstanceForChannel($instID, '4');
 
+    $action = @IPS_GetObjectIDByName('IPS.SetValue', GetLocalConfig('Aktions-Scripte'));
+
     $varID = @IPS_GetObjectIDByIdent('MINIMUM_LEVEL', $chan4);
     if ($varID == false) {
         $varID = IPS_CreateVariable(VARIABLETYPE_FLOAT);
@@ -713,7 +715,7 @@ function HM_ShutterCreateExtraVariables($instID)
         IPS_SetParent($varID, $chan4);
         IPS_SetIdent($varID, 'MINIMUM_LEVEL');
         IPS_SetVariableCustomProfile($varID, 'HM.ShutterPosition.Reversed');
-        IPS_SetVariableCustomAction($varID, 27576);
+        IPS_SetVariableCustomAction($varID, $action);
     }
 
     $varID = @IPS_GetObjectIDByIdent('MINIMUM_LEVEL_ACTIVE', $chan4);
@@ -723,7 +725,7 @@ function HM_ShutterCreateExtraVariables($instID)
         IPS_SetParent($varID, $chan4);
         IPS_SetIdent($varID, 'MINIMUM_LEVEL_ACTIVE');
         IPS_SetVariableCustomProfile($varID, 'Local.JaNein');
-        IPS_SetVariableCustomAction($varID, 27576);
+        IPS_SetVariableCustomAction($varID, $action);
     }
 }
 

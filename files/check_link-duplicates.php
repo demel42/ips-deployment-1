@@ -43,4 +43,4 @@ function check4LinkDuplicates($catID)
     }
 }
 
-check4LinkDuplicates(11862);
+check4LinkDuplicates(GetLocalConfig('Geräte-Typen'));

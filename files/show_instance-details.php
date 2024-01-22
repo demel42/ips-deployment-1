@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require_once IPS_GetScriptFile(15814);
+require_once IPS_GetScriptFile(GetLocalConfig('GLOBAL_HELPER'));
 
 function InstanceInfo(int $instID)
 {
@@ -100,4 +100,4 @@ function InstanceInfo(int $instID)
     return $s;
 }
 
-echo InstanceInfo(31892) . PHP_EOL;
+// echo InstanceInfo(xxxx) . PHP_EOL;

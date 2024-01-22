@@ -37,5 +37,5 @@ function check4LinkDefects($catID)
     }
 }
 
-check4LinkDefects(11862);
+check4LinkDefects(GetLocalConfig('Geräte-Typen'));
 check4LinkDefects(0);
