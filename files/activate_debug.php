@@ -2,4 +2,4 @@
 
 declare(strict_types=1);
 
-// IPS_EnableDebugFile(xxx);
+// IPS_EnableDebugFile(xxxxx);
