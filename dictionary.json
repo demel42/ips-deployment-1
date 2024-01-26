@@ -1,6 +1,6 @@
 {
-	"version": "16",
-	"tstamp": 1706283086,
+	"version": "17",
+    "tstamp": 1706288174,
 	"files": [
 		{
 			"filename": "instance-revise-helper.php",
@@ -801,6 +801,11 @@
             "location": "Scripte\\System-Scripte",
             "name": "Hilfsfunktionen für Ereignisse",
 			"requires": [ "GLOBAL_HELPER" ]
+        },
+        {
+            "filename": "HM-missing-device-types.php",
+            "location": "Scripte\\System-Scripte",
+            "name": "HomeMatic - fehlende Einträge in Geräte-Typen"
         }
 	]
 }
