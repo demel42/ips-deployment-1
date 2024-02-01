@@ -575,7 +575,7 @@ function HM_ThermoSetWindowState($instID, $state)
     return $r;
 }
 
-// ********* Rolladenaktor (HmIP-BROLL, HmIP-FROLL)
+// ********* Rolladenaktor (HmIP-BROLL, HmIP-BROLL-2, HmIP-FROLL)
 
 function HM_ShutterMoveUp($instID)
 {
@@ -927,6 +927,7 @@ function DeviceRequest(int $objID, string $value, string &$msg)
                 }
                 break;
             case 'HmIP-BROLL':
+            case 'HmIP-BROLL-2':
             case 'HmIP-FROLL':
                 switch ($value) {
                     case 'moveup':
