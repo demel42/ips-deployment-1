@@ -682,7 +682,7 @@ function HM_ShutterSyncLevel($instID)
     $activity = GetValueInteger(IPS_GetObjectIDByIdent('ACTIVITY_STATE', $chan3));
     for ($i = 0; $activity != 3 /* steht */ && $i < 10; $i++) {
         IPS_Sleep(500);
-        $activity = GetValueFloat(IPS_GetObjectIDByIdent('ACTIVITY_STATE', $chan3));
+        $activity = GetValueInteger(IPS_GetObjectIDByIdent('ACTIVITY_STATE', $chan3));
     }
     if ($activity == 3 /* steht */) {
         IPS_Sleep(500);
