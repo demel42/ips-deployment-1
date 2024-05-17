@@ -767,7 +767,7 @@
 		{
 			"filename": "imap-helper.php",
 			"location": "Scripte\\System-Scripte",
-			"name": "Hilfsfunktionen für IMAP"
+			"name": "Hilfsfunktionen für IMAP",
 			"requires": [ "IMAP_HELPER" ]
 		},
 		{
