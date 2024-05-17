@@ -1,6 +1,6 @@
 {
-	"version": "19",
-	"tstamp": 1706887550,
+	"version": "20",
+	"tstamp": 1715958860,
 	"files": [
 		{
 			"filename": "instance-revise-helper.php",
@@ -768,6 +768,7 @@
 			"filename": "imap-helper.php",
 			"location": "Scripte\\System-Scripte",
 			"name": "Hilfsfunktionen für IMAP"
+			"requires": [ "IMAP_HELPER" ]
 		},
 		{
 			"filename": "show_instance-details.php",
