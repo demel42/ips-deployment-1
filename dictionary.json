@@ -1,6 +1,6 @@
 {
-	"version": "20",
-	"tstamp": 1715958860,
+	"version": "21",
+	"tstamp": 1724307225,
 	"files": [
 		{
 			"filename": "instance-revise-helper.php",
@@ -762,7 +762,7 @@
 			"filename": "global-helper.php",
 			"location": "Scripte\\System-Scripte",
 			"name": "Hilfsfunktionen",
-			"requires": [ "Location Control", "Geräte-Typen", "NoticeBase" ]
+			"requires": [ "GLOBAL_HELPER", "Location Control", "Geräte-Typen", "NoticeBase" ]
 		},
 		{
 			"filename": "imap-helper.php",
@@ -795,13 +795,13 @@
             "filename": "variable-helper.php",
             "location": "Scripte\\System-Scripte",
             "name": "Hilfsfunktionen für Variablen",
-			"requires": [ "GLOBAL_HELPER" ]
+			"requires": [ "GLOBAL_HELPER", "VARIABLE_HELPER"  ]
         },
         {
             "filename": "event-helper.php",
             "location": "Scripte\\System-Scripte",
             "name": "Hilfsfunktionen für Ereignisse",
-			"requires": [ "GLOBAL_HELPER" ]
+			"requires": [ "GLOBAL_HELPER", "EVENT_HELPER" ]
         },
         {
             "filename": "HM-missing-device-types.php",

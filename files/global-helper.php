@@ -42,30 +42,6 @@ function Util_IpInNet($net, $netmask, $ip)
     return (($ipadr & $smask) == (($bcast & $smask) & $smask)) ? true : false;
 }
 
-// Distanz zwischen zwei Geo-Koordinaten berechnen (in Kilometern)
-// Quelle: http://phplernen.org/snippets/entfernung-zwischen-zwei-geokoordinaten-berechnen/
-function Util_GeoDistance($cur_lon, $cur_lat, $home_lon = '', $home_lat = '')
-{
-    if ($home_lon == '' || $home_lat == '') {
-        $instID = GetLocalConfig('Location Control');
-        if (IPS_GetKernelVersion() >= 5) {
-            $loc = json_decode(IPS_GetProperty($instID, 'Location'), true);
-            $home_lon = $loc['longitude'];
-            $home_lat = $loc['latitude'];
-        } else {
-            $home_lon = IPS_GetProperty($instID, 'Longitude');
-            $home_lat = IPS_GetProperty($instID, 'Latitude');
-        }
-    }
-    $theta = $home_lon - $cur_lon;
-    $dist = sin(deg2rad($home_lat)) * sin(deg2rad($cur_lat)) + cos(deg2rad($home_lat)) * cos(deg2rad($cur_lat)) * cos(deg2rad($theta));
-    $dist = acos($dist);
-    $dist = rad2deg($dist);
-    $dist = $dist * 60 * 1.1515 * 1.609344;
-
-    return $dist;
-}
-
 // ********* IPS-Hilfsfunktionen *********
 
 // Ermitteln des Geräte-Typs
