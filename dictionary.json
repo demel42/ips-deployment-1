@@ -1,6 +1,6 @@
 {
-	"version": "21",
-	"tstamp": 1724307225,
+	"version": "22",
+	"tstamp": 1724312022,
 	"files": [
 		{
 			"filename": "instance-revise-helper.php",
@@ -31,6 +31,11 @@
 		{
 			"filename": "Shelly-Pro3EM.php",
 			"name": "Shelly Pro3EM",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
+		},
+		{
+			"filename": "Shelly-3EM.php",
+			"name": "Shelly 3EM",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{

@@ -91,7 +91,7 @@ function Instance_ExtractNormalize(int $instID, bool $write2file)
     $s .= PHP_EOL;
     $s .= 'declare(strict_types=1);' . PHP_EOL;
     $s .= PHP_EOL;
-    $s .= '$setting = ' . var_export($settings) . ';' . PHP_EOL;
+    $s .= '$setting = ' . var_export($settings, true) . ';' . PHP_EOL;
     $s .= PHP_EOL;
     $s .= 'echo json_encode($setting);' . PHP_EOL;
 
