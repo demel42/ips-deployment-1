@@ -1,12 +1,17 @@
 {
-	"version": "22",
-	"tstamp": 1724312022,
+	"version": "23",
+	"tstamp": 1728470805,
 	"files": [
 		{
 			"filename": "instance-revise-helper.php",
 			"name": "Hilfsfunktionen zur Überarbeitung von Instanzen",
 			"location": "Scripte\\System-Scripte",
 			"requires": [ "GLOBAL_HELPER", "INSTANCE_REVISE_HELPER", "Archive Control", "Aktions-Scripte" ]
+		},
+		{
+			"filename": "Aeotec-Water-Sensor-7-Pro.php",
+			"name": "Aeotec Water Sensor 7 Pro",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
 			"filename": "Fibaro-FGCD-001.php",
@@ -24,8 +29,18 @@
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
+			"filename": "Shelly-3EM.php",
+			"name": "Shelly 3EM",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
+		},
+		{
 			"filename": "Shelly-Plus2PM.php",
 			"name": "Shelly Plus2PM",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
+		},
+		{
+			"filename": "Shelly-PM-Mini-Gen3.php",
+			"name": "Shelly PM Mini Gen3",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
@@ -34,8 +49,8 @@
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
-			"filename": "Shelly-3EM.php",
-			"name": "Shelly 3EM",
+			"filename": "Shelly-ProEM.php",
+			"name": "Shelly ProEM",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von Instanzen"
 		},
 		{
@@ -70,19 +85,29 @@
 			"requires": [ "GLOBAL_HELPER", "HM_INSTANCE_REVISE_HELPER", "Archive Control", "Util Control", "Aktions-Scripte", "Geräte-Typen" ]
 		},
 		{
-			"filename": "HmIP-BS2.php",
+			"filename": "HM-CC-RT-DN.php",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-BS2"
+			"name": "HM-CC-RT-DN"
 		},
 		{
-			"filename": "HM-SEC-SCO.php",
+			"filename": "HM-LC-Dim1TPBU-FM.php",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HM-SEC-SCO"
+			"name": "HM-LC-Dim1TPBU-FM"
 		},
 		{
-			"filename": "HmIP-BROLL-2.php",
+			"filename": "HM-LC-Sw1-Ba-PCB.php",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-BROLL-2"
+			"name": "HM-LC-Sw1-Ba-PCB"
+		},
+		{
+			"filename": "HM-LC-Sw1-FM.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HM-LC-Sw1-FM"
+		},
+		{
+			"filename": "HM-LC-Sw2-FM.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HM-LC-Sw2-FM"
 		},
 		{
 			"filename": "HM-LC-Sw2PBU-FM.php",
@@ -95,14 +120,34 @@
 			"name": "HM-LC-Sw4-Ba-PCB"
 		},
 		{
-			"filename": "HmIP-SMI55-2.php",
+			"filename": "HM-SEC-RHS.php",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-SMI55-2"
+			"name": "HM-SEC-RHS"
 		},
 		{
-			"filename": "HmIP-SWSD.php",
+			"filename": "HM-SEC-SC-2.php",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-SWSD"
+			"name": "HM-SEC-SC-2"
+		},
+		{
+			"filename": "HM-SEC-SCO.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HM-SEC-SCO"
+		},
+		{
+			"filename": "HM-SEN-MDIR-O-2.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HM-SEN-MDIR-O-2"
+		},
+		{
+			"filename": "HM-WDS10-TH-O.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HM-WDS10-TH-O"
+		},
+		{
+			"filename": "HM-WDS40-TH-1-2.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HM-WDS40-TH-1-2"
 		},
 		{
 			"filename": "HmIP-BDT.php",
@@ -110,9 +155,29 @@
 			"name": "HmIP-BDT"
 		},
 		{
-			"filename": "HmIP-FDT.php",
+			"filename": "HmIP-BRC2.php",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-FDT"
+			"name": "HmIP-BRC2"
+		},
+		{
+			"filename": "HmIP-BROLL.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-BROLL"
+		},
+		{
+			"filename": "HmIP-BROLL-2.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-BROLL-2"
+		},
+		{
+			"filename": "HmIP-BS2.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-BS2"
+		},
+		{
+			"filename": "HmIP-BSM.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-BSM"
 		},
 		{
 			"filename": "HmIP-BWTH.php",
@@ -120,9 +185,39 @@
 			"name": "HmIP-BWTH"
 		},
 		{
-			"filename": "HmIP-WRC6.php",
+			"filename": "HmIP-DSD-PCB.php",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-WRC6"
+			"name": "HmIP-DSD-PCB"
+		},
+		{
+			"filename": "HmIP-ESI.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-ESI"
+		},
+		{
+			"filename": "HmIP-eTRV-2.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-eTRV-2"
+		},
+		{
+			"filename": "HmIP-eTRV-E.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-eTRV-E"
+		},
+		{
+			"filename": "HmIP-FCI6.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-FCI6"
+		},
+		{
+			"filename": "HmIP-FDT.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-FDT"
+		},
+		{
+			"filename": "HmIP-FROLL.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-FROLL"
 		},
 		{
 			"filename": "HmIP-FSI16.php",
@@ -130,9 +225,74 @@
 			"name": "HmIP-FSI16"
 		},
 		{
-			"filename": "HmIP-BSM.php",
+			"filename": "HmIP-FSM.php",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-BSM"
+			"name": "HmIP-FSM"
+		},
+		{
+			"filename": "HmIP-FSM16.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-FSM16"
+		},
+		{
+			"filename": "HmIP-HAP.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-HAP"
+		},
+		{
+			"filename": "HmIP-MOD-OC8.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-MOD-OC8"
+		},
+		{
+			"filename": "HmIP-MOD-RC8.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-MOD-RC8"
+		},
+		{
+			"filename": "HmIP-PCBS.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-PCBS"
+		},
+		{
+			"filename": "HmIP-PCBS-BAT.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-PCBS-BAT"
+		},
+		{
+			"filename": "HmIP-PSM.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-PSM"
+		},
+		{
+			"filename": "HmIP-PSM-2.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-PSM-2"
+		},
+		{
+			"filename": "HmIP-PS.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-PS"
+		},
+		{
+			"filename": "HmIP-SCI.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-SCI"
+		},
+		{
+			"filename": "HmIP-SLO.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-SLO"
+		},
+		{
+			"filename": "HmIP-SMI55-2.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-SMI55-2"
+		},
+		{
+			"filename": "HmIP-SMO.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-SMO"
 		},
 		{
 			"filename": "HmIP-SPI.php",
@@ -145,134 +305,9 @@
 			"name": "HmIP-SRH"
 		},
 		{
-			"filename": "HM-LC-Sw1-Ba-PCB.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HM-LC-Sw1-Ba-PCB"
-		},
-		{
-			"filename": "HM-LC-Sw2-FM.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HM-LC-Sw2-FM"
-		},
-		{
-			"filename": "HmIP-MOD-OC8.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-MOD-OC8"
-		},
-		{
-			"filename": "HM-SEC-RHS.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HM-SEC-RHS"
-		},
-		{
-			"filename": "HM-SEC-SC-2.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HM-SEC-SC-2"
-		},
-		{
-			"filename": "HmIP-PCBS-BAT.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-PCBS-BAT"
-		},
-		{
-			"filename": "HmIP-SLO.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-SLO"
-		},
-		{
-			"filename": "HmIP-WTH-1.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-WTH-1"
-		},
-		{
-			"filename": "HmIP-SWDM.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-SWDM"
-		},
-		{
-			"filename": "HmIP-eTRV-E.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-eTRV-E"
-		},
-		{
-			"filename": "HmIP-BRC2.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-BRC2"
-		},
-		{
-			"filename": "HmIP-SMO.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-SMO"
-		},
-		{
-			"filename": "HmIP-SWD.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-SWD"
-		},
-		{
-			"filename": "HmIP-eTRV-2.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-eTRV-2"
-		},
-		{
-			"filename": "HmIP-SCI.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-SCI"
-		},
-		{
-			"filename": "HmIP-BROLL.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-BROLL"
-		},
-		{
-			"filename": "HmIP-FSM.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-FSM"
-		},
-		{
-			"filename": "HmIP-WTH-2.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-WTH-2"
-		},
-		{
-			"filename": "HM-LC-Sw1-FM.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HM-LC-Sw1-FM"
-		},
-		{
 			"filename": "HmIP-STH.php",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
 			"name": "HmIP-STH"
-		},
-		{
-			"filename": "HM-WDS40-TH-1-2.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HM-WDS40-TH-1-2"
-		},
-		{
-			"filename": "HM-SEN-MDIR-O-2.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HM-SEN-MDIR-O-2"
-		},
-		{
-			"filename": "HmIP-DSD-PCB.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-DSD-PCB"
-		},
-		{
-			"filename": "HmIP-FSM16.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-FSM16"
-		},
-		{
-			"filename": "HM-CC-RT-DN.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HM-CC-RT-DN"
-		},
-		{
-			"filename": "HmIP-PS.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-PS"
 		},
 		{
 			"filename": "HmIP-STHD.php",
@@ -280,49 +315,19 @@
 			"name": "HmIP-STHD"
 		},
 		{
-			"filename": "HmIP-ESI.php",
+			"filename": "HmIP-STHO.php",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-ESI"
+			"name": "HmIP-STHO"
 		},
 		{
-			"filename": "HmIP-PSM.php",
+			"filename": "HmIP-SWD.php",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-PSM"
+			"name": "HmIP-SWD"
 		},
 		{
-			"filename": "HmIP-HAP.php",
+			"filename": "HmIP-SWDM.php",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-HAP"
-		},
-		{
-			"filename": "HmIP-WRC2.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-WRC2"
-		},
-		{
-			"filename": "HmIP-SWDO-2.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-SWDO-2"
-		},
-		{
-			"filename": "HmIP-PSM-2.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-PSM-2"
-		},
-		{
-			"filename": "HmIP-MOD-RC8.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-MOD-RC8"
-		},
-		{
-			"filename": "HmIP-FROLL.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-FROLL"
-		},
-		{
-			"filename": "HM-WDS10-TH-O.php",
-			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HM-WDS10-TH-O"
+			"name": "HmIP-SWDM"
 		},
 		{
 			"filename": "HmIP-SWDO.php",
@@ -330,19 +335,24 @@
 			"name": "HmIP-SWDO"
 		},
 		{
-			"filename": "RPI-RF-MOD.php",
+			"filename": "HmIP-SWDO-2.php",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "RPI-RF-MOD"
+			"name": "HmIP-SWDO-2"
 		},
 		{
-			"filename": "HM-LC-Dim1TPBU-FM.php",
+			"filename": "HmIP-SWSD.php",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HM-LC-Dim1TPBU-FM"
+			"name": "HmIP-SWSD"
 		},
 		{
-			"filename": "HmIP-STHO.php",
+			"filename": "HmIP-WRC2.php",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-STHO"
+			"name": "HmIP-WRC2"
+		},
+		{
+			"filename": "HmIP-WRC6.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-WRC6"
 		},
 		{
 			"filename": "HmIP-WRCD.php",
@@ -350,9 +360,19 @@
 			"name": "HmIP-WRCD"
 		},
 		{
-			"filename": "HmIP-PCBS.php",
+			"filename": "HmIP-WTH-1.php",
 			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
-			"name": "HmIP-PCBS"
+			"name": "HmIP-WTH-1"
+		},
+		{
+			"filename": "HmIP-WTH-2.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "HmIP-WTH-1"
+		},
+		{
+			"filename": "RPI-RF-MOD.php",
+			"location": "Scripte\\System-Scripte\\Hilfsfunktionen zur Überarbeitung von HomeMatic-Instanzen",
+			"name": "RPI-RF-MOD"
 		},
 		{
 			"filename": "variableprofile-helper.php",
@@ -796,22 +816,22 @@
 			"location": "Scripte\\System-Scripte",
 			"name": "Liste der Module"
 		},
-        {
-            "filename": "variable-helper.php",
-            "location": "Scripte\\System-Scripte",
-            "name": "Hilfsfunktionen für Variablen",
-			"requires": [ "GLOBAL_HELPER", "VARIABLE_HELPER"  ]
-        },
-        {
-            "filename": "event-helper.php",
-            "location": "Scripte\\System-Scripte",
-            "name": "Hilfsfunktionen für Ereignisse",
+		{
+			"filename": "variable-helper.php",
+			"location": "Scripte\\System-Scripte",
+			"name": "Hilfsfunktionen für Variablen",
+			"requires": [ "GLOBAL_HELPER", "VARIABLE_HELPER" ]
+		},
+		{
+			"filename": "event-helper.php",
+			"location": "Scripte\\System-Scripte",
+			"name": "Hilfsfunktionen für Ereignisse",
 			"requires": [ "GLOBAL_HELPER", "EVENT_HELPER" ]
-        },
-        {
-            "filename": "HM-missing-device-types.php",
-            "location": "Scripte\\System-Scripte",
-            "name": "HomeMatic - fehlende Einträge in Geräte-Typen"
-        }
+		},
+		{
+			"filename": "HM-missing-device-types.php",
+			"location": "Scripte\\System-Scripte",
+			"name": "HomeMatic - fehlende Einträge in Geräte-Typen"
+		}
 	]
 }

@@ -2,43 +2,15 @@
 
 declare(strict_types=1);
 
-// Shelly Pro3EM
+// Shelly ProEM
 $setting = [
     'Reachable' => [
         'name'     => 'Status',
         'position' => 1,
     ],
-    'Switch' => [
+    'State' => [
         'name'     => 'Schaltausgang',
         'position' => 10,
-    ],
-    'totalCurrent' => [
-        'name'      => 'Gesamt Strom',
-        'position'  => 11,
-        'doArchive' => true,
-    ],
-    'totalActPower' => [
-        'name'      => 'Gesamt Wirkleistung',
-        'position'  => 13,
-        'doArchive' => true,
-    ],
-    'totalAprtPower' => [
-        'name'     => 'Gesamt Scheinleistung',
-        'position' => 14,
-    ],
-    'totalActEnergy' => [
-        'name'            => 'Gesamt Bezug',
-        'position'        => 16,
-        'doArchive'       => true,
-        'aggregationType' => 1,
-        'ignoreZeros'     => true,
-    ],
-    'totalActRetEnergy' => [
-        'name'            => 'Gesamt Einspeisung',
-        'position'        => 17,
-        'doArchive'       => true,
-        'aggregationType' => 1,
-        'ignoreZeros'     => true,
     ],
     'aVoltage' => [
         'name'     => 'Phase A Spannung',
@@ -108,42 +80,6 @@ $setting = [
     'bTotalActRetEnergy' => [
         'name'            => 'Phase B Einspeisung',
         'position'        => 37,
-        'doArchive'       => true,
-        'aggregationType' => 1,
-        'ignoreZeros'     => true,
-    ],
-    'cVoltage' => [
-        'name'     => 'Phase C Spannung',
-        'position' => 41,
-    ],
-    'cCurrent' => [
-        'name'      => 'Phase C Strom',
-        'position'  => 42,
-        'doArchive' => true,
-    ],
-    'cActPower' => [
-        'name'      => 'Phase C Wirkleistung',
-        'position'  => 43,
-        'doArchive' => true,
-    ],
-    'cAprtPower' => [
-        'name'     => 'Phase C Scheinleistung',
-        'position' => 44,
-    ],
-    'cPF' => [
-        'name'     => 'Phase C Leistungsfaktor',
-        'position' => 45,
-    ],
-    'cTotalActEnergy' => [
-        'name'            => 'Phase C Bezug',
-        'position'        => 46,
-        'doArchive'       => true,
-        'aggregationType' => 1,
-        'ignoreZeros'     => true,
-    ],
-    'cTotalActRetEnergy' => [
-        'name'            => 'Phase C Einspeisung',
-        'position'        => 47,
         'doArchive'       => true,
         'aggregationType' => 1,
         'ignoreZeros'     => true,

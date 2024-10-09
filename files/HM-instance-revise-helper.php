@@ -103,14 +103,14 @@ function HM_ExtractNormalize(string $type, string $address, bool $write2file)
 
     if ($write2file) {
         $parID = GetLocalConfig('HM_INSTANCE_REVISE_HELPER');
-        $scriptID = @IPS_GetScriptIDByName($ident, $parID);
+        $scriptID = @IPS_GetScriptIDByName($type, $parID);
         if ($scriptID == false) {
-            echo 'Skript "' . $ident . '" wird angelegt' . PHP_EOL;
+            echo 'Skript "' . $type . '" wird angelegt' . PHP_EOL;
             $scriptID = IPS_CreateScript(SCRIPTTYPE_PHP);
-            IPS_SetName($scriptID, $ident);
+            IPS_SetName($scriptID, $type);
             IPS_SetParent($scriptID, $parID);
         } else {
-            echo 'Skript "' . $ident . '" wird aktualisiert' . PHP_EOL;
+            echo 'Skript "' . $type . '" wird aktualisiert' . PHP_EOL;
         }
         IPS_SetScriptContent($scriptID, $s);
     } else {

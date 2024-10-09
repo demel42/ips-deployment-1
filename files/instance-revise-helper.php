@@ -19,7 +19,7 @@ function Instance_cmp($a, $b)
     return strcmp($a_ident, $b_ident);
 }
 
-function Instance_ExtractNormalize(int $instID, bool $write2file)
+function Instance_ExtractNormalize(string $type, int $instID, bool $write2file)
 {
     $ArchivID = GetLocalConfig('Archive Control');
 
@@ -97,14 +97,14 @@ function Instance_ExtractNormalize(int $instID, bool $write2file)
 
     if ($write2file) {
         $parID = GetLocalConfig('INSTANCE_REVISE_HELPER');
-        $scriptID = @IPS_GetScriptIDByName($ident, $parID);
+        $scriptID = @IPS_GetScriptIDByName($type, $parID);
         if ($scriptID == false) {
-            echo 'Skript "' . $ident . '" wird angelegt' . PHP_EOL;
+            echo 'Skript "' . $type . '" wird angelegt' . PHP_EOL;
             $scriptID = IPS_CreateScript(SCRIPTTYPE_PHP);
-            IPS_SetName($scriptID, $ident);
+            IPS_SetName($scriptID, $type);
             IPS_SetParent($scriptID, $parID);
         } else {
-            echo 'Skript "' . $ident . '" wird aktualisiert' . PHP_EOL;
+            echo 'Skript "' . $type . '" wird aktualisiert' . PHP_EOL;
         }
         IPS_SetScriptContent($scriptID, $s);
     } else {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-// Fibaro CO-Sensor (FGCD-001)
+// Fibaro CO-Melder (FGCD-001)
 $setting = [
     'SensorMultilevel28Variable' => [
         'name'          => 'Sensor Multilevel (CO Konzentration)',
