@@ -98,7 +98,7 @@ $setting = [
     ],
     4 => [
         'ENERGY_COUNTER' => [
-            'name'          => 'Abgabe',
+            'name'          => 'Einspeisung',
         ],
         'ENERGY_COUNTER_STATUS' => [
             'isHidden'      => true,
